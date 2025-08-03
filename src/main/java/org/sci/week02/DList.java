@@ -46,4 +46,18 @@ public class DList {
     trailer.prev = trailer.prev.prev;
     sz--;
   }
+
+  public int getFirst() {
+    if(sz == 0) {
+      return -1;
+    }
+    return header.next.val;
+  }
+
+  public int getLast() {
+    if(sz == 0) {
+      return -1;
+    }
+    return trailer.prev.val;
+  }
 }
